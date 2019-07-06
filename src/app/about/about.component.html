@@ -1,0 +1,65 @@
+<div class="container"
+     fxLayout="column"
+     fxLayoutGap="10px">
+
+  <div fxFlex>
+    <div>
+      <h3>Acerca de nosotros</h3>
+      <hr>
+    </div>
+  </div>
+
+  <div fxFlex>
+    <div fxLayout="column" fxLayout.gt-sm="row">
+      <div fxFlex="70">
+        <h2>Nuestra historia</h2>
+        <p>Iniciamos el año 2017, DR se establecio rapidamente como un icono de calidad en maquinaria agricola por
+          excelencia en Cochabamba.
+          La importacion directa nos permitio ofrecer precios sin competencia en el mercado. Usted puede confiar en la
+          garantia de funcionamiento ofrecida de nuestros productos.</p>
+      </div>
+      <div fxFlex="30">
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>
+              <h2>Fechas importantes</h2>
+            </mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <dl>
+              <dt>Inicio de actividades</dt>
+              <dd>1 de Junio de 2017</dd>
+              <dt>Principal importador de maquinaria agricola</dt>
+              <dd>DR IMPORT</dd>
+            </dl>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+
+  <div fxFlex>
+    <mat-card>
+      <blockquote>
+        <h3>El sector agricola necesita de las herramientas que le permitan realizar una gestion adecuada</h3>
+        <footer>-- NN,
+          <cite>Citas anónimas</cite>
+        </footer>
+      </blockquote>
+    </mat-card>
+  </div>
+
+
+  <div fxFlex>
+    <h2>Personal </h2>
+    <mat-list dense>
+      <mat-list-item *ngFor="let employee of employees">
+        <img matListAvatar [src]="employee.image" alt="{{employee.name}}">
+        <span matLine>{{employee.name}}</span>
+        <span matLine>{{employee.jobPosition}}</span>
+        <span matLine>{{employee.jobDescription}}</span>
+      </mat-list-item>
+    </mat-list>
+
+  </div>
+</div>

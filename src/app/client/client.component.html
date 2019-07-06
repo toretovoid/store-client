@@ -1,0 +1,17 @@
+<p>client works! My List</p>
+
+
+
+
+
+<mat-list dense>
+  <mat-list-item *ngFor="let client of clients">
+    <span matLine>{{client.firstName}}</span>
+    <span matLine>{{client.lastName}}</span>
+    <span matLine>{{client.phone}}</span>
+    <span matLine>{{client.email}}</span>
+  </mat-list-item>
+</mat-list>
+
+
+
